@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment Solution for Module 2</title>
+    <style>
+        /* Desktop view */
+        @media (min-width: 992px) {
+            .box {
+                width: calc(33.33% - 40px); 
+                margin: 40px 20px; 
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+
+        /* Tablet view */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .box {
+                width: calc(50% - 40px); 
+                margin: 30px 20px; 
+                display: inline-block; 
+                vertical-align: top;
+            }
+
+            .box:last-child {
+                width: calc(100% - 40px); 
+                margin: 30px 20px 0; 
+            }
+        }
+
+        /* Mobile view */
+        @media (max-width: 767px) {
+            .box {
+                width: calc(100% - 40px);
+                margin: 20px 20px 0;
+            }
+        }
+
+        .box {
+            height: 200px;
+            background-color: grey;
+            padding: 10px;
+            border: 3px solid black;
+            position:relative;
+        }
+
+        h3 {
+            padding: 5px;
+            margin: 0;
+            border: 2px solid black;
+            position: absolute; 
+            top: 0px; 
+            right: 0px; 
+            background-color: white;
+        }
+        .box:nth-child(4) h3 {
+            background-color:yellow ;        }
+        .box:nth-child(2) h3 {
+            background-color: pink;
+        }
+        .box:nth-child(3) h3 {
+            background-color: red;
+        }
+
+        p {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>OUR MENU</h1>
+        <div class="box">
+            <h3 >chicken</h3>
+            <p>Indulge in our mouthwatering grilled chicken dish, expertly seasoned and served with roasted vegetables and creamy mashed potatoes. Succulent and flavorful, it's a perfect choice to satisfy your cravings and elevate your dining experience.</p>
+        </div>
+        <div class="box">
+            <h3>beef</h3>
+            <p>Treat yourself to the exquisite flavors of our tender, juicy beef dish, expertly prepared to perfection. Our chef's special beef entree features premium cuts of succulent beef, grilled to your desired level of doneness and seasoned with a delightful blend of herbs and spices, ensuring each bite is a culinary delight.</p>
+        </div>
+        <div class="box">
+            <h3>sushi</h3>
+            <p>Indulge in the artistry of our sushi selection, meticulously crafted to perfection. Our chef's special sushi platter features a variety of fresh, high-quality ingredients, expertly rolled into delicate morsels of culinary delight. From traditional favorites like salmon and tuna to inventive creations bursting with flavor, each bite promises a journey of taste sensations.</p>
+        </div>
+    </center>
+</body>
+</html>
